@@ -7,6 +7,7 @@ let squares = [
 
 let currentSquares = 8
 let bombIndex = 0;
+let tries = 0;
 
 function new_squares(quantity) {
 
@@ -51,11 +52,18 @@ function putSquaresInUI() {
     display.appendChild(square);
 
     square.addEventListener("click", () => {
+      tries++;
       if (i === bombIndex) {
         showSquaresType();
 
         setTimeout(() => {
-          display.innerText = "You Exploded!"
+          if (tries === 1) {
+            display.innerText = "How do u Exploded at First Try ☠️";
+          }
+          else{
+            display.innerText = "You Exploded!";
+          }
+          
         }, 1500);
 
         new Audio("sound/explosionSound.mp3").play()
