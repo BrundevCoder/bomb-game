@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Syne:wght@400..800&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,12 +8,21 @@
 
 body {
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #d7dad0;
 }
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Syne", sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  word-break: break-all;
+  text-align: center;
 }
 
 .container-display {
@@ -27,9 +38,31 @@ body {
 }
 
 .square {
-  background: blue;
+  font-family: "Syne", sans-serif;
+  color: #fff;
+  font-weight: 800;
+  background: rgb(65, 65, 65);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  border-radius: 24px;
+  border-radius: 12px;
   height: 100px;
   width: 100px;
+  border: none;
+  cursor: pointer;
+  transition: 155ms ease;
+}
+
+.square:hover {
+  transform: scale(1.05);
+}
+
+.square:active {
+  transform: scale(.9);
+}
+
+.green {
+  background-color: #279c0f;
+}
+
+.red {
+  background-color: #a11c1c;
 }
