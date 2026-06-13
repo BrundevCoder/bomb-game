@@ -15,7 +15,7 @@ The game starts with 8 squares initially. You advance to the next round only by 
 Remember that the square selected to be the bomb is chosen randomly by the `new_squares()` function, which updates the array.
 Finally, depending on whether you advance to the next round or not, the code produces a sound according to the round's status.
 
-My project was coded in these languages:
+### My project was coded in these languages:
 
 HTML, css e javaScript
 <br>
